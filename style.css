@@ -1,0 +1,127 @@
+*,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: #9ED2BE;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: relative;
+}
+
+body {
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b7e196;
+}
+
+.conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.fisik {
+    border-color: #2d3241;
+    border-style: groove;
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 200px;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 5px;
+    background-color: #5e8971;
+    box-shadow: 12px 10px 30px black;
+}
+
+
+.penutup {
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 50px;
+    width: 394px;
+    height: 30px;
+    background-color: black;
+    margin-bottom: -70px;
+}
+
+.nada {
+    margin-top: -2px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #5a5e77;
+    width: 30px;
+    transform: translateY(0);
+    transition: transform 0.5s ease-in;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nada p {
+    position: relative;
+    z-index: 1;
+    font-size: 40px;
+    margin-bottom: -35px;
+}
+
+.nada h5 {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background-color: #9ED2BE;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    height: 60px;
+    color: #2d3241;
+    font-size: 30px;
+}
+
+.nada:hover {
+    background-color: rgb(210, 184, 152);
+    transform: translateY(-5px);
+}
+
+.nada.shaking {
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
